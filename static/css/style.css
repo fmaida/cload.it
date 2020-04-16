@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'MSX Screen 0';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/MSX-Screen0.eot');
+    src: local('☺'), url('../fonts/MSX-Screen0.woff') format('woff'),
+         url('../fonts/MSX-Screen0.ttf') format('truetype'),
+         url('../fonts/MSX-Screen0.svg') format('svg');
+}
+
+body {
+    font-family: "MSX Screen 0", Monaco, Menlo, Consolas, "Courier New", monospace;
+    //background-image: url("../img/background.png");
+    //background-repeat: repeat;
+    background-color: #576dd8;
+    color: #e7ecf4;
+}
+
+.btn, .btn-primary, .btn-secondary, .custom-file-input {
+    border: none;
+}
+
+.btn:hover {
+    background-color: #5955e0;
+}
+
+.btn-primary {
+    background-color: #65dbef;
+}
+
+.btn-primary:disabled, .btn-secondary:disabled {
+    background-color: #cccccc;
+}
+
+.btn-secondary {
+    background-color: #b766b5;
+}
+
+a, .text-info {
+    color: #ded087 !important;
+}
+.text-danger {
+    color: #db6559 !important;
+}
+
+a:hover {
+    color: #ccc35e;
+}
+
+.row:first-child {
+    margin-top: 16px;
+}
+h1:first-child {
+    margin-bottom: 16px;
+}
+
+form {
+    width: 100% !important;
+}
+
+.custom-file {
+    margin-bottom: 8px;
+}
+
+.file-operations {
+    /* background-color: #0000ff;
+    padding: 8px; */
+    margin-bottom: 1em;
+}
+
+#message {
+    margin-bottom: 1em;
+}
+
+#play {
+    margin-right: 8px;
+}
+
+#stop, #saveas {
+    margin-right: 16px;
+}

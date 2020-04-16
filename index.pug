@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+    head
+        title
+            | MSX Tapes
+        metatags(charset="UTF-8")
+        link(rel="stylesheet",
+             href="static/css/bootstrap/bootstrap.css")
+        link(rel="stylesheet",
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet",
+            href="static/css/style.css")
+        script(type="text/javascript",
+            src="static/js/jquery/jquery.js")
+        script(type="text/javascript",
+            src="static/js/bootstrap/bootstrap.js")
+        script(type="text/javascript",
+            src="static/js/filesaver/FileSaver.min.js")
+        script(type="text/javascript",
+            src="static/js/cassettejs/cassettejs.js")
+
+    body
+        div.container
+            div.row(class="justify-content-center")
+                h1
+                    | ** MSX Tapes **
+            div.row
+                p.text-justify
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at eveniet quidem. Aperiam culpa, cum dolorum fugit maxime mollitia, nam nostrum nulla obcaecati odit officia optio provident ratione sequi sint.
+            div.row(class="file-operations")
+                form
+                    div.container
+                        div.row
+                            div.custom-file
+                                input.custom-file-input(type="file",
+                                    accept="*.cas",
+                                    id="file_selector")
+                                label.custom-file-label(for="file_selector")
+                                    strong
+                                        | Please choose a .cas file
+                        div.row
+                            button.btn(id="play", class="btn-primary")
+                                i.fa(class="fa-play")
+                                | &nbsp;Play
+                            button.btn(id="stop", class="btn-primary")
+                                i.fa(class="fa-stop")
+                                | &nbsp;Stop
+                            button.btn(id="saveas", class="btn-secondary")
+                                i.fa(class="fa-arrow-down")
+                                | &nbsp;Save as .WAV
+
+                            span.align-middle(id="message")
+                                | &nbsp;
+            div.row
+                p.text-justify
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dicta laborum placeat quas repellat rerum veniam! Ad, asperiores autem corporis ea error excepturi itaque maiores, natus officia quaerat, reiciendis sapiente?
+
+            div.row
+                a.tape(href="examples/roadf.cas")
+                    | Road Fighter
+
+        script(type="text/javascript",
+            src="static/js/script.js")

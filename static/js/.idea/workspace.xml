@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cf634dd-cd77-4b5a-a72d-0f68888bd1ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../index.jade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/buffer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datablock.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FileSaver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/riffwave.js.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/riffwave.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msxtape.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parameters.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typings/jquery/jquery.d.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1ZtpFyv12tt4gbFZxNmqNqUJ7pj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="/usr/local/lib/node_modules/jest" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="/usr/local/lib/node_modules/typescript/lib" />
+  </component>
+  <component name="RunManager" selected="Jest.msxtape.test.js">
+    <configuration name="msxtape.test.js" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="/usr/local/lib/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/msxtape/msxtape.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="msxtape.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/msxtape.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="msxtape.test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/msxtape/msxtape.test.js" working-dir="$PROJECT_DIR$/msxtape">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.msxtape.test.js" />
+      <item itemvalue="Node.js.msxtape.js" />
+      <item itemvalue="Node.js.msxtape.test.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.msxtape.test.js" />
+        <item itemvalue="Node.js.msxtape.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cf634dd-cd77-4b5a-a72d-0f68888bd1ef" name="Default Changelist" comment="" />
+      <created>1585668145278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585668145278</updated>
+      <workItem from="1585668148840" duration="1138000" />
+      <workItem from="1585730221001" duration="47000" />
+      <workItem from="1585730444535" duration="323000" />
+      <workItem from="1585730789957" duration="364000" />
+      <workItem from="1585731177329" duration="3533000" />
+      <workItem from="1585768034465" duration="211000" />
+      <workItem from="1585768302294" duration="22000" />
+      <workItem from="1585768345620" duration="598000" />
+      <workItem from="1585816980677" duration="3050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/msxtape.js" />
+        <option value="$PROJECT_DIR$/lib/riffwave.js" />
+        <option value="$USER_HOME$/Downloads/test-jest/somma.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="151" key="#All_Tests" timestamp="1585832313006">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="461" y="151" key="#All_Tests/0.23.1440.877@0.23.1440.877" timestamp="1585832313006" />
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585832450468">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1585832450468" />
+    <state width="1419" height="212" key="GridCell.Tab.0.bottom" timestamp="1585853508649">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="212" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585853508649" />
+    <state width="1419" height="212" key="GridCell.Tab.0.center" timestamp="1585853508648">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="212" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1585853508648" />
+    <state width="1419" height="212" key="GridCell.Tab.0.left" timestamp="1585853508647">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="212" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1585853508647" />
+    <state width="1419" height="212" key="GridCell.Tab.0.right" timestamp="1585853508648">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="212" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1585853508648" />
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1585853508446">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585853508446" />
+    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1585853508445">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1585853508445" />
+    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1585853508445">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1585853508445" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1585853508445">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1585853508445" />
+    <state width="1419" height="266" key="GridCell.Tab.2.bottom" timestamp="1585853508447">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585853508447" />
+    <state width="1419" height="266" key="GridCell.Tab.2.center" timestamp="1585853508446">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1585853508446" />
+    <state width="1419" height="266" key="GridCell.Tab.2.left" timestamp="1585853508446">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1585853508446" />
+    <state width="1419" height="266" key="GridCell.Tab.2.right" timestamp="1585853508446">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1585853508446" />
+    <state width="1419" height="266" key="GridCell.Tab.3.bottom" timestamp="1585853508448">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.3.bottom/0.23.1440.877@0.23.1440.877" timestamp="1585853508448" />
+    <state width="1419" height="266" key="GridCell.Tab.3.center" timestamp="1585853508447">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.3.center/0.23.1440.877@0.23.1440.877" timestamp="1585853508447" />
+    <state width="1419" height="266" key="GridCell.Tab.3.left" timestamp="1585853508447">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.3.left/0.23.1440.877@0.23.1440.877" timestamp="1585853508447" />
+    <state width="1419" height="266" key="GridCell.Tab.3.right" timestamp="1585853508447">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.3.right/0.23.1440.877@0.23.1440.877" timestamp="1585853508447" />
+    <state x="229" y="100" width="1097" height="722" key="SettingsEditor" timestamp="1585832198691">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="229" y="100" width="1097" height="722" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1585832198691" />
+    <state x="320" y="126" key="scopes" timestamp="1585759905642">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="126" key="scopes/0.23.1440.877@0.23.1440.877" timestamp="1585759905642" />
+  </component>
+</project>
