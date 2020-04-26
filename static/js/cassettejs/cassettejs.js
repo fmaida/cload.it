@@ -308,6 +308,10 @@ class MSXBlock extends DataBlock {
             }
             this.data = temp;
         }
+        else {
+            this.set_name("------");
+        }
+        this.length = this.data.length;
     }
     analyze_block_type() {
         var block_type = "custom";

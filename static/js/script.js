@@ -4,31 +4,53 @@ let buffer = null;
 let msx_tape = null;
 let data = null;
 
-// Esegui quando la pagina viene caricata
+/* Esegui quando la pagina viene caricata */
 $(document).ready(function() {
 
     disablePlayAndStop();
 
+    $("table").hide();
+
     file = undefined;
 
     msx_tape = new CassetteJS();
+
+    /* Viene eseguito quando una cassetta viene caricata in memoria */
     msx_tape.on_load = function(length) {
         console.log("FILE READ (" + length.toString() + " Bytes)");
         if (typeof file_selector !== "undefined") {
             file_selector.innerText = "";
         }
         show_message("Operation in progress. Please wait...",
-            "text-info");
+            "has-text-info");
         disablePlayAndStop();
     };
+
+    /* Quando i blocchi nella cassetta vengono esaminati */
     msx_tape.on_block_analysis = function(index, total) {
-        show_message("Analysing block " + index.toString() + " of " + total.toString(),
-            "text-info")
+        let testo = "Analysing block " + index.toString() + " of " + total.toString();
+        show_message(testo, "has-text-info")
     };
+
+    /* Quando la cassetta è stata caricata, analizzata e convertita */
     msx_tape.on_job_completed = function(file_list) {
         let temp = "";
+        $("#game_list").empty();
+        for(let element of file_list) {
+            console.log(element.name);
+            temp = "";
+            temp += "<tr>";
+            temp += "<td>" + element.name + "</td>";
+            temp += "<td>" + element.type + "</td>";
+            temp += "<td>" + element.data.length.toString() + "</td>";
+            temp += "</tr>";
+            $("#game_list").append(temp);
+        }
+        temp = "";
         if (typeof file !== "undefined") {
             temp += file.name;
+        } else {
+            temp += file_list[0].name.trim();
         }
         if (file_list.length > 0) {
             temp += " ";
@@ -40,12 +62,12 @@ $(document).ready(function() {
                 temp += "( CLOAD )";
             }
         }
-        if (typeof file_selector !== "undefined") {
-            file_selector.innerText = temp;
-        }
-        show_message();
+        show_message(temp);
         enablePlay();
     };
+
+    /* Quando si verificano degli errori
+       nell'analisi della cassetta */
     msx_tape.on_error = function(buffer) {
         console.log("FILE ERROR");
         let message = "Unable to load '" + file.name + "'. ";
@@ -53,6 +75,8 @@ $(document).ready(function() {
         show_message(message);
         disablePlayAndStop();
     };
+
+    /* Quando viene richiesta l'esportazione in formato WAV */
     msx_tape.on_audio_export = function(dati) {
         let file_name = file.name
             .toLowerCase()
@@ -61,17 +85,17 @@ $(document).ready(function() {
         saveAs(dati, file_name);
     };
 
-    $("#file_selector").change(function(e) {
+    $("#cas_selector").change(function(e) {
 
         disablePlayAndStop();
 
-        file = document.getElementById("file_selector").files[0];
+        file = document.getElementById("cas_selector").files[0];
 
         // Put the file name in the input field
-        file_selector = e.target.nextElementSibling;
-        file_selector.innerText = "";
+        file_selector = $("#cas_name"); //.nextElementSibling;
+        file_selector.html("");
         show_message("Loading '" + file.name + "'",
-            "text-info");
+            "has-text-info");
         msx_tape.load_from_local_file(file)
 
     });
@@ -86,17 +110,25 @@ $(document).ready(function() {
         stop();
     });
 
-    $("#saveas").click(function(e) {
+    $("#saveas").not(".is-disabled").click(function(e) {
         e.preventDefault();
         console.log("SAVE AS!");
         msx_tape.player.save();
     });
 
-    $(".tape").click(async function(e) {
+    $("#show_details").click(function(e) {
         e.preventDefault();
-        let link = e.target.href.replace(/(^\w+:|^)\/\//, "");
-        //console.log(link);
-        link = "examples/roadf.cas";
+        $(".table").toggle();
+        $(".dropdown").removeClass('is-active');
+    });
+
+    /* Quando l'utente clicca su di un link che contiene un file
+       in formato .cas */
+    $("a[href*=\".cas\"]").click(async function(e) {
+        e.preventDefault();
+        let link = e.target.href; //.replace(/(^\w+:|^)\/\//, "");
+        console.log(link);
+        //link = "examples/roadf.cas";
         response = await fetch(link);
         if (response.ok) {
             let buffer = await response.arrayBuffer();
@@ -104,6 +136,15 @@ $(document).ready(function() {
             let result = msx_tape.load_from_remote_file(link, gigetto);
         }
         //console.log(result);
+    });
+
+    $(".dropdown .button").click(function (e){
+        e.stopPropagation();
+        var dropdown = $(this).parents('.dropdown');
+        dropdown.toggleClass('is-active');
+        /*dropdown.focusout(function(e) {
+            $(this).removeClass('is-active');
+        }); */
     });
 
     /*
@@ -149,19 +190,19 @@ $(document).ready(function() {
 });
 
 function disablePlayAndStop() {
-    $("#play").prop("disabled", true);
-    $("#stop").prop("disabled", true);
-    $("#saveas").prop("disabled", true);
+    $("#play").attr("disabled", "disabled");
+    $("#stop").attr("disabled", "disabled");
+    $("#saveas").attr("disabled", "disabled");
 }
 
 function enablePlay() {
     $("#play").removeAttr("disabled");
-    $("#stop").prop("disabled", true);
+    $("#stop").attr("disabled", "disabled");
     $("#saveas").removeAttr("disabled");
 }
 
 function enableStop() {
-    $("#play").prop("disabled", true);
+    $("#play").attr("disabled", "disabled");
     $("#stop").removeAttr("disabled");
     $("#saveas").removeAttr("disabled");
 }
@@ -179,13 +220,17 @@ function stop()
     enablePlay();
 }
 
-function show_message(p_text="", p_class="text-danger")
+function show_message(p_text="", p_class="")
 {
-    $("#message").hide();
-    $("#message").removeClass("text-danger");
-    $("#message").removeClass("text-info");
-    $("#message").addClass(p_class);
-    $("#message").html(p_text);
-    $("#message").show(0);
+    // GIGETTO
+    let message = $("#cas_name");
+    message.hide();
+    message.removeClass("has-text-danger");
+    message.removeClass("has-text-info");
+    if (p_class !== "") {
+        message.addClass(p_class);
+    }
+    message.html(p_text);
+    message.show(0);
 }
 

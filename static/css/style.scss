@@ -1,0 +1,135 @@
+$transparent: rgba(0, 0, 0, 0);
+$black: rgb(1, 1, 1);
+$medium_green: rgb(62, 184, 73);
+$light_green: rgb(116, 208, 125);
+$dark_blue: rgb(89, 85, 224);
+$light_blue: rgb(128, 118, 241);
+$dark_red: rgb(185, 94, 81);
+$cyan: rgb(101, 219, 239);
+$medium_red: rgb(219, 101, 89);
+$light_red: rgb(255, 137, 125);
+$dark_yellow: rgb(204, 195, 94);
+$light_yellow: rgb(222, 208, 135);
+$dark_green: rgb(58, 162, 65);
+$magenta: rgb(183, 102, 181);
+$gray: rgb(204, 204, 204);
+$white: rgb(255, 255, 255);
+
+
+@font-face {
+    font-family: 'MSX Screen 0';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/MSX-Screen0.eot');
+    src: local('☺'), url('../fonts/MSX-Screen0.woff') format('woff'),
+         url('../fonts/MSX-Screen0.ttf') format('truetype'),
+         url('../fonts/MSX-Screen0.svg') format('svg');
+}
+
+html, body, th, td, .dropdown-trigger .button {
+    font-family: "MSX Screen 0", Monaco, Menlo, Consolas, "Courier New", monospace;
+    //background-image: url("../img/background.png");
+    //background-repeat: repeat;
+    background-color: $light_blue;
+    color: $white !important;
+
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+.file {
+    border-color: $white;
+    border-radius: 6px;
+}
+
+.file-cta {
+    background-color: $white;
+}
+
+.button:hover {
+    background-color: #5955e0;
+}
+
+.button.is-primary {
+    background-color: $cyan;
+    color: #444;
+}
+
+.button.is-primary:hover {
+    background-color: $white;
+    color: #444;
+}
+
+.is-primary:disabled, .is-secondary:disabled {
+    background-color: $gray;
+}
+
+.is-secondary, .dropdown-trigger > .button, .dropdown-content {
+    background-color: $magenta;
+    border-color: $magenta;
+}
+
+.dropdown-item {
+    color: $white;
+}
+
+.navbar-item.is-active {
+    background-color: $medium_red;
+}
+
+a {
+    color: $white;
+}
+
+.has-text-info {
+    color: $dark_yellow !important;
+}
+
+.has-text-danger {
+    color: $medium_red !important;
+}
+
+/* a:hover {
+    color: #ccc35e;
+} */
+
+.row:first-child {
+    margin-top: 16px;
+}
+h1:first-child {
+    margin-bottom: 16px;
+}
+
+form {
+    width: 100% !important;
+}
+
+table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.custom-file {
+    margin-bottom: 8px;
+}
+
+.file-operations {
+    /* background-color: #0000ff;
+    padding: 8px; */
+    margin-bottom: 1em;
+}
+
+#message {
+    margin-bottom: 1em;
+}
+
+#play {
+    margin-right: 8px;
+}
+
+#stop, #saveas {
+    margin-right: 16px;
+}

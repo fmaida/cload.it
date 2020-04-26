@@ -1,0 +1,44 @@
+section.section(class="file-operations is-paddingless")
+    div.container
+        div.file(class="has-name is-right is-fullwidth")
+            label.file-label
+                input.file-input(id="cas_selector", type="file", name="resume")
+                span.file-cta
+                    span.file-icon
+                        i.fas(class="fa-upload")
+                    span.file-label
+                        | Choose a file...
+                span.file-name#cas_name
+                    | Please choose a tape file...
+
+section.section(class="is-paddingless")
+
+    div.button(id="play", class="is-primary")
+        i.fas(class="fa-play")
+        | &nbsp;Play
+
+    div.button(id="stop", class="is-primary")
+        i.fas(class="fa-stop")
+        | &nbsp;Stop
+
+    div.dropdown
+
+        div.dropdown-trigger
+            button.button(aria-haspopup="true",
+                aria-controls="dropdown-menu")
+                span
+                    i.fas.fa-bars(aria-hidden="true")
+                    | &nbsp;More
+                span.icon.is-small
+                    i.fas.fa-angle-down(aria-hidden="true")
+
+        div.dropdown-menu#dropdown-menu(role="menu")
+            div.dropdown-content
+                a.dropdown-item(id="saveas")
+                    i.fa(class="fa-arrow-down")
+                    |
+                    | Save as wav
+                a.dropdown-item("id=show_details")
+                    i.fa(class="fa-info-circle")
+                    |
+                    | Show / Hide details
