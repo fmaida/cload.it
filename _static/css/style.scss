@@ -143,6 +143,10 @@ a.tape:hover {
     color: $dark_red;
 }
 
+p.disclaimer strong {
+    color: $magenta !important;
+}
+
 section.section:first-child {
     padding-bottom: 0;
 }
