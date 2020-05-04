@@ -78,8 +78,13 @@ $(document).ready(function() {
 
     /* Quando viene richiesta l'esportazione in formato WAV */
     msx_tape.on_audio_export = function(dati) {
-        let file_name = file.name
-            .toLowerCase()
+        let file_name;
+        if (typeof file === "undefined") {
+            file_name = msx_tape.list[0].name;
+        } else {
+            file_name = file.name;
+        }
+        file_name.toLowerCase()
             .replace(".cas", "");
         file_name += ".wav";
         saveAs(dati, file_name);

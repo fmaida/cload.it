@@ -106,10 +106,11 @@ form {
     width: 100% !important;
 }
 
-table {
+.block > table {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 100%;
+    background-color: $dark_yellow;
 }
 
 .custom-file {
@@ -132,4 +133,16 @@ table {
 
 #stop, #saveas {
     margin-right: 16px;
+}
+
+a.tape {
+    color: $light_yellow;
+}
+
+a.tape:hover {
+    color: $dark_red;
+}
+
+section.section:first-child {
+    padding-bottom: 0;
 }
