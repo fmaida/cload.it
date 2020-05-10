@@ -27,9 +27,9 @@ $(document).ready(function() {
     };
 
     /* Quando i blocchi nella cassetta vengono esaminati */
-    msx_tape.on_block_analysis = function(index, total) {
-        let testo = "Analysing block " + index.toString() + " of " + total.toString();
-        show_message(testo, "has-text-info")
+    msx_tape.on_block_analysis = function(block) {
+        //let testo = "Analysing block " + index.toString() + " of " + total.toString();
+        //show_message(testo, "has-text-info")
     };
 
     /* Quando la cassetta è stata caricata, analizzata e convertita */
